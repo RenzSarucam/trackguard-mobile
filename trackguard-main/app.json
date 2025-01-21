@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "TrackGuard",
+    "slug": "trackguard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/trackguard.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/trackguard.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyDhrmEgFiWFi7oDvOJixIb4zugdSYBfIQg"
+      },
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to track and display your current location on the map.",
+        "NSLocationAlwaysUsageDescription": "This app needs access to your location to track and display your current location."
+      }
+    },
+    "android": {
+      "package": "com.example.trackguard",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/trackguard.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDhrmEgFiWFi7oDvOJixIb4zugdSYBfIQg"
+        }
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
